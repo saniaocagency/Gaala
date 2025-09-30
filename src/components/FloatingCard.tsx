@@ -21,7 +21,7 @@ const FloatingCard: React.FC<FloatingCardProps> = ({
 }) => {
   return (
     <div 
-      className="group bg-[#ECE8E3]/5 border border-[#ECE8E3]/10 rounded-2xl p-8 hover:border-[#D4AF37]/30 transition-all duration-300 hover:shadow-xl hover:shadow-[#D4AF37]/20 hover:-translate-y-4 hover:scale-105 floating-card hover-glow"
+      className="group bg-[#ECE8E3]/5 border border-[#ECE8E3]/10 rounded-2xl p-8 hover:border-[#D4AF37]/30 transition-all duration-300 hover:shadow-xl hover:shadow-[#D4AF37]/20 hover:-translate-y-4 hover:scale-105 floating-card hover-glow-enhanced interactive-glow"
       style={{ animationDelay: `${delay}ms` }}
     >
       <div className="w-16 h-16 bg-gradient-to-br from-[#D4AF37]/20 to-[#FFD777]/20 rounded-2xl flex items-center justify-center mb-6 group-hover:from-[#D4AF37]/40 group-hover:to-[#FFD777]/40 transition-all duration-300 group-hover:scale-125 group-hover:rotate-6 soft-glow">

@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Award, Menu, X, Mail } from 'lucide-react';
 import SmoothScroll from './SmoothScroll';
 import OcagencyBranding from './OcagencyBranding';
+import MouseGlow from './MouseGlow';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,6 +28,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="min-h-screen bg-[#08070A] text-[#ECE8E3] font-['Inter'] antialiased">
       <SmoothScroll />
+      <MouseGlow />
       
       {/* Header */}
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${

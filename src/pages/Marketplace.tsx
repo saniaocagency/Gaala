@@ -277,12 +277,12 @@ const Marketplace: React.FC = () => {
                       <div className="flex gap-2">
                         <button 
                           disabled={!product.inStock}
-                          className="reward-button flex-1 px-4 py-2 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-medium rounded-lg hover:shadow-lg hover:shadow-[#D4AF37]/25 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center hover:-translate-y-1 hover:scale-105"
+                          className="reward-button flex-1 px-4 py-2 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-medium rounded-lg hover:shadow-lg hover:shadow-[#D4AF37]/25 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center hover:-translate-y-1 hover:scale-105 interactive-glow"
                         >
                           <ShoppingCart className="w-4 h-4 mr-2" />
                           Add to Cart
                         </button>
-                        <button className="px-4 py-2 border-2 border-[#ECE8E3]/30 hover:border-[#D4AF37] hover:bg-[#ECE8E3]/5 rounded-lg transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover-glow">
+                        <button className="px-4 py-2 border-2 border-[#ECE8E3]/30 hover:border-[#D4AF37] hover:bg-[#ECE8E3]/5 rounded-lg transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover-glow-enhanced interactive-glow">
                           Quote
                         </button>
                       </div>

@@ -343,3 +343,48 @@ textarea:focus-visible {
     background-color: rgba(8, 7, 10, 0.95);
   }
 }
+
+/* Mouse glow effect enhancements */
+.mouse-glow-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.mouse-glow-enhanced {
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(212, 175, 55, 0.06) 0%,
+    rgba(255, 215, 119, 0.03) 25%,
+    rgba(212, 175, 55, 0.01) 50%,
+    transparent 70%
+  );
+  transition: background 0.3s ease;
+}
+
+/* Enhanced hover states with glow integration */
+.hover-glow-enhanced {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.hover-glow-enhanced:hover {
+  box-shadow: 
+    0 0 30px rgba(212, 175, 55, 0.4),
+    0 0 60px rgba(255, 215, 119, 0.2),
+    0 10px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(212, 175, 55, 0.6);
+  background: rgba(212, 175, 55, 0.05);
+}
+
+/* Interactive elements glow enhancement */
+.interactive-glow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.interactive-glow:hover {
+  box-shadow: 
+    0 0 20px rgba(212, 175, 55, 0.3),
+    0 0 40px rgba(255, 215, 119, 0.15),
+    0 5px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
