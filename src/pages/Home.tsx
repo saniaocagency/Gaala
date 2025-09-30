@@ -60,7 +60,7 @@ const Home: React.FC = () => {
               <span className="block bg-gradient-to-r from-[#D4AF37] to-[#FFD777] bg-clip-text text-transparent glow-text">
                 Wholesale.
               </span>
-              <span className="block bg-gradient-to-r from-[#FFD777] to-[#D4AF37] bg-clip-text text-transparent glow-text">
+              <span className="block bg-gradient-to-r from-[#FFD777] to-[#D4AF37] bg-clip-text text-transparent glow-text pb-2">
                 Reimagined.
               </span>
               <span className="block text-[#ECE8E3] font-extrabold">

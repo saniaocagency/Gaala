@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { CheckCircle, Star, ArrowRight, CreditCard, Shield, Zap } from 'lucide-react';
 import FadeInUp from '../components/FadeInUp';
+import MouseTrail from '../components/MouseTrail';
 
 const Pricing: React.FC = () => {
   useEffect(() => {
@@ -150,6 +151,7 @@ const Pricing: React.FC = () => {
 
   return (
     <div className="px-6 py-8 relative">
+      <MouseTrail />
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-radial from-[#D4AF37]/3 via-transparent to-transparent pointer-events-none"></div>
       

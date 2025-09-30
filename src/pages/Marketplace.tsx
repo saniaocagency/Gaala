@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { Search, Filter, Grid2x2 as Grid, List, Star, Heart, ShoppingCart, Eye } from 'lucide-react';
 import FadeInUp from '../components/FadeInUp';
+import MouseTrail from '../components/MouseTrail';
 
 const Marketplace: React.FC = () => {
   useEffect(() => {
@@ -117,7 +118,8 @@ const Marketplace: React.FC = () => {
   });
 
   return (
-    <div className="px-6 py-8">
+    <div className="px-6 py-8 relative">
+      <MouseTrail />
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <FadeInUp className="mb-8">

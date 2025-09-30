@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import FadeInUp from '../components/FadeInUp';
 import OcagencyBranding from '../components/OcagencyBranding';
+import MouseTrail from '../components/MouseTrail';
 
 const About: React.FC = () => {
   useEffect(() => {
@@ -107,6 +108,7 @@ const About: React.FC = () => {
 
   return (
     <div className="px-6 py-8 relative">
+      <MouseTrail />
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-radial from-[#D4AF37]/3 via-transparent to-transparent pointer-events-none"></div>
       

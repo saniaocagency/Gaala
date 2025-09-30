@@ -292,3 +292,39 @@ textarea:focus-visible {
   background-size: 200px 100%;
   animation: shimmer 1.5s infinite;
 }
+
+/* Enhanced dropdown animations */
+@keyframes dropdown-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+}
+
+.dropdown-enter {
+  animation: dropdown-slide-in 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Improved text rendering */
+.text-rendering-optimized {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Better backdrop blur support */
+@supports (backdrop-filter: blur(20px)) {
+  .backdrop-blur-enhanced {
+    backdrop-filter: blur(20px) saturate(180%);
+  }
+}
+
+@supports not (backdrop-filter: blur(20px)) {
+  .backdrop-blur-enhanced {
+    background-color: rgba(8, 7, 10, 0.95);
+  }
+}

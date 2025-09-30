@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Eye, EyeOff, Mail, Lock, ArrowRight, Award } from 'lucide-react';
 import FadeInUp from '../components/FadeInUp';
+import MouseTrail from '../components/MouseTrail';
 
 const Login: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -26,6 +27,7 @@ const Login: React.FC = () => {
 
   return (
     <div className="min-h-screen flex bg-[#08070A] text-[#ECE8E3] relative overflow-hidden">
+      <MouseTrail />
       {/* Left Side Branding Panel */}
       <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-[#D4AF37]/20 to-[#FFD777]/10 items-center justify-center p-12 relative">
         <div className="max-w-md text-center">

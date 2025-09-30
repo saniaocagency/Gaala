@@ -13,6 +13,7 @@ import {
   CheckCircle
 } from 'lucide-react';
 import FadeInUp from '../components/FadeInUp';
+import MouseTrail from '../components/MouseTrail';
 
 const Register: React.FC = () => {
   useEffect(() => {
@@ -84,7 +85,8 @@ const Register: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen px-6 py-12 bg-[#08070A] text-[#ECE8E3]">
+    <div className="min-h-screen px-6 py-12 bg-[#08070A] text-[#ECE8E3] relative">
+      <MouseTrail />
       <div className="max-w-4xl mx-auto">
         {/* Logo */}
         <FadeInUp className="text-center mb-8">
