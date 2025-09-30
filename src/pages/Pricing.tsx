@@ -229,10 +229,10 @@ const Pricing: React.FC = () => {
 
                 <button 
                   onClick={() => handlePayment(plan.name)}
-                  className={`reward-button w-full py-4 px-6 rounded-xl font-bold text-lg transition-all duration-300 ${
+                  className={`reward-button w-full py-4 px-6 rounded-xl font-bold text-lg transition-all duration-300 interactive-glow ${
                     plan.popular
                       ? 'bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] hover:shadow-lg hover:shadow-[#D4AF37]/30 hover:-translate-y-2 hover:scale-110 soft-glow'
-                      : 'border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#08070A] hover:-translate-y-1 hover:scale-105 hover-glow'
+                      : 'border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#08070A] hover:-translate-y-1 hover:scale-105 hover-glow-enhanced'
                   }`}
                 >
                   {plan.cta}
