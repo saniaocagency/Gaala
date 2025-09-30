@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import FadeInUp from '../components/FadeInUp';
 import MouseTrail from '../components/MouseTrail';
-import VideoDropdown from '../components/VideoDropdown';
+import VideoSection from '../components/VideoSection';
 import FloatingCard from '../components/FloatingCard';
 import { Link } from 'react-router-dom';
 
@@ -122,10 +122,10 @@ const Home: React.FC = () => {
             <p className="text-xl text-[#ECE8E3]/80 max-w-3xl mx-auto mb-8">
               See how we're transforming B2B commerce across India with our revolutionary credit-as-inventory model.
             </p>
-            
-            <div className="hover-lift">
-              <VideoDropdown />
-            </div>
+          </FadeInUp>
+          
+          <FadeInUp delay={100}>
+            <VideoSection />
           </FadeInUp>
         </div>
       </section>
